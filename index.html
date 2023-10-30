@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/main.js" defer></script>
 </head>
+
 <body>
-    
+    <div id="app">
+        <div class="headerContainer">
+            <div class="logoContainer">
+                <img src="./img/mainIcon.svg" alt="" class="logoImg">
+                <h1 class="logoText">ELPrisen.nu</h1>
+            </div>
+            <img src="./img/settings.svg" alt="" class="headerSettings">
+        </div>
+
+        <div class="contentContainer">
+            <div class="currentContainer">
+                <h1 class="currentHeader">ELPRISEN LIGE NU</h1>
+                <div class="currentPrice">
+                    <div class="border1">
+                        <div class="border2">
+                            <p id="priceContainer">elpris</p>
+                            <p class="priceDesc">PR. KWH</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="currentTime" id="currentTimeContainer">tid</p>
+                <div class="highestAndLowest">
+                    <div>
+                        <div class="border3 lowest">
+                            <div class="border4">
+                                <p id="lowestPriceContainer">elpris</p>
+                                <p class="priceDesc2">PR. KWH</p>
+                            </div>
+                        </div>
+                        <p>LAVESTE PRIS</p>
+                    </div>
+                    <div>
+                        <div class="border3 highest">
+                            <div class="border4">
+                                <p id="highestPriceContainer">elpris</p>
+                                <p class="priceDesc2">PR. KWH</p>
+                            </div>
+                        </div>
+                        <p>HØJESTE PRIS</p>
+                    </div>
+                </div>
+                <div class="CurrentInfo">
+                    <p>alle priser er og afgifter.</p>
+                    <p>du vises lige nu priserne for region eksl. moms øst danmark</p>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </body>
+
 </html>
