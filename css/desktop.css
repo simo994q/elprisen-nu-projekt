@@ -28,7 +28,11 @@
 
 
 .contentContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .currentHeader {
@@ -139,4 +143,63 @@
 
 .priceDesc2 {
     font-size: 12px;
+}
+
+
+#overviewList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.overviewListItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    box-shadow: 0px 0px 10px 0px #EBEBEB22;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 40px;
+}
+
+.list1 {
+    color: #00FF01;
+}
+.list2 {
+    color: #33FF00;
+}
+.list3 {
+    color: #65FF00;
+}
+.list4 {
+    color: #93F500;
+}
+.list5 {
+    color: #CCFF00;
+}
+.list6 {
+    color: #FFFF01;
+}
+.list7 {
+    color: #FFCC00;
+}
+.list8 {
+    color: #FE9900;
+}
+.list9 {
+    color: #FF6600;
+}
+.list10 {
+    color: #FF3300;
+}
+
+
+#dateSelector {
+    background-color: var(--black);
+    box-shadow: 0px 0px 10px 0px #EBEBEB22;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 40px;
+    border: none;
+    outline: none;
 }
