@@ -22,15 +22,15 @@
             <img src="./img/settings.svg" alt="" class="headerSettings">
             <nav class="headerNav">
                 <ul class="headerNavItems">
-                    <li>OVERSIGT</li>
-                    <li>LIGE NU</li>
-                    <li>HISTORIK</li>
+                    <li id="navOne">OVERSIGT</li>
+                    <li id="navTwo">LIGE NU</li>
+                    <li id="navThree">HISTORIK</li>
                 </ul>
             </nav>
         </div>
 
         <div class="contentContainer">
-            <div class="currentContainer">
+            <div class="currentContainer" id="currentContainer">
                 <h1 class="currentHeader">ELPRISEN LIGE NU</h1>
                 <div class="currentPrice">
                     <div class="border1">
@@ -66,13 +66,13 @@
                     <p>du vises lige nu priserne for region eksl. moms øst danmark</p>
                 </div>
             </div>
-            <div class="overviewContainer">
+            <div class="overviewContainer" id="overviewContainer">
                 <h1 class="currentHeader">OVERSIGT</h1>
                 <ul id="overviewList">
                 </ul>
 
             </div>
-            <div class="historyContainer">
+            <div class="historyContainer" id="historyContainer">
                 <h1 class="currentHeader">HISTORIK</h1>
                 <select id="dateSelector">
                     <option value="1">I GÅR</option>

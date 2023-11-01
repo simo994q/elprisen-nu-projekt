@@ -46,16 +46,15 @@
 }
 .headerNavItems {
     display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: 500;
 }
 
 @media (max-width: 850px) {
     .contentContainer {
         margin: auto;
         grid-template-columns: 1fr;
-    }
-    .overviewContainer,
-    .historyContainer {
-        display: none;
     }
     .headerNav {
         display: block;
