@@ -40,6 +40,14 @@
         gap: 30px;
     }
 }
+
+.headerNav {
+    display: none;
+}
+.headerNavItems {
+    display: flex;
+}
+
 @media (max-width: 850px) {
     .contentContainer {
         margin: auto;
@@ -49,7 +57,17 @@
     .historyContainer {
         display: none;
     }
+    .headerNav {
+        display: block;
+    }
+    .headerSettings {
+        display: none;
+    }
+}
 
+
+.headerNav li {
+    color: var(--white);
 }
 
 .currentHeader {
