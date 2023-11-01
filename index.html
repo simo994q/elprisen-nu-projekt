@@ -22,48 +22,51 @@
             <img src="./img/settings.svg" alt="" class="headerSettings">
             <nav class="headerNav">
                 <ul class="headerNavItems">
-                    <li id="navOne">OVERSIGT</li>
-                    <li id="navTwo">LIGE NU</li>
+                    <li id="navOne">LIGE NU</li>
+                    <li id="navTwo">OVERSIGT</li>
                     <li id="navThree">HISTORIK</li>
                 </ul>
             </nav>
         </div>
 
         <div class="contentContainer">
+            <img src="./img/settings.svg" alt="" id="mobileSettings">
             <div class="currentContainer" id="currentContainer">
-                <h1 class="currentHeader">ELPRISEN LIGE NU</h1>
-                <div class="currentPrice">
-                    <div class="border1">
-                        <div class="border2">
-                            <p id="priceContainer">elpris</p>
-                            <p class="priceDesc">PR. KWH</p>
+                <div class="currentDiv">
+                    <h1 class="currentHeader">ELPRISEN LIGE NU</h1>
+                    <div class="currentPrice">
+                        <div class="border1">
+                            <div class="border2">
+                                <p id="priceContainer">elpris</p>
+                                <p class="priceDesc">PR. KWH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="currentTime" id="currentTimeContainer">tid</p>
+                    <div class="highestAndLowest">
+                        <div class="hlDiv">
+                            <div class="border3 lowest">
+                                <div class="border4">
+                                    <p id="lowestPriceContainer">elpris</p>
+                                    <p class="priceDesc2">PR. KWH</p>
+                                </div>
+                            </div>
+                            <p class="hlPD">LAVESTE PRIS</p>
+                        </div>
+                        <div class="hlDiv">
+                            <div class="border3 highest">
+                                <div class="border4">
+                                    <p id="highestPriceContainer">elpris</p>
+                                    <p class="priceDesc2">PR. KWH</p>
+                                </div>
+                            </div>
+                            <p class="hlPD">HØJESTE PRIS</p>
                         </div>
                     </div>
                 </div>
-                <p class="currentTime" id="currentTimeContainer">tid</p>
-                <div class="highestAndLowest">
-                    <div>
-                        <div class="border3 lowest">
-                            <div class="border4">
-                                <p id="lowestPriceContainer">elpris</p>
-                                <p class="priceDesc2">PR. KWH</p>
-                            </div>
-                        </div>
-                        <p>LAVESTE PRIS</p>
-                    </div>
-                    <div>
-                        <div class="border3 highest">
-                            <div class="border4">
-                                <p id="highestPriceContainer">elpris</p>
-                                <p class="priceDesc2">PR. KWH</p>
-                            </div>
-                        </div>
-                        <p>HØJESTE PRIS</p>
-                    </div>
-                </div>
-                <div class="CurrentInfo">
-                    <p>alle priser er og afgifter.</p>
-                    <p>du vises lige nu priserne for region eksl. moms øst danmark</p>
+                <div class="currentInfo">
+                    <p>MED/UDEN MOMS</p>
+                    <p>REGION</p>
                 </div>
             </div>
             <div class="overviewContainer" id="overviewContainer">
@@ -83,6 +86,22 @@
                 </select>
                 <ul id="historyList">
                 </ul>
+            </div>
+            <div id="settingsPage">
+                <img src="./img/close.svg" alt="" class="closeImg">
+                <h1 class="currentHeader">INDSTILLINGER</h1>
+                <div>
+                    <p></p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p></p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p></p>
+                    <input type="text">
+                </div>
             </div>
         </div>
     </div>
