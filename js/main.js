@@ -255,6 +255,7 @@ window.addEventListener('resize', () => {
 const pageOne = document.getElementById('currentContainer')
 const pageTwo = document.getElementById('overviewContainer')
 const pageThree = document.getElementById('historyContainer')
+const settingsPage = document.getElementById('settingsPage')
 
 const setDisplay = (page) => {
     switch (page) {
@@ -273,12 +274,23 @@ const setDisplay = (page) => {
             pageTwo.style.display = 'none'
             pageThree.style.display = 'block'
             break;
+        case 4:
+            pageOne.style.display = 'none'
+            pageTwo.style.display = 'none'
+            pageThree.style.display = 'none'
+            settingsPage.style.dispay = 'flex'
+            break;
     }
 }
 const fullDisplay = () => {
     pageOne.style.display = 'flex'
     pageTwo.style.display = 'block'
     pageThree.style.display = 'block'
+    if (settingsPageOpen = true) {
+        settingsPage.style.dispay = 'flex'
+    } else {
+        settingsPage.style.dispay = 'none'
+    }
 }
 
 const navOne = document.getElementById('navOne')

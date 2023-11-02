@@ -264,6 +264,33 @@
 }
 
 
+
+
+
+#mobileSettings {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 24px;
+}
+
+
+
+#settingsPage {
+    flex-direction: column;
+}
+.closeImg {
+    position: absolute;
+    height: 24px;
+}
+
+
+
+
+
+
+
 @media (max-width: 1100px) {
     .contentContainer {
         margin: 0 50px;
@@ -288,12 +315,10 @@
     .headerSettings {
         display: none;
     }
-}
-
-
-#mobileSettings {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    height: 24px;
+    #mobileSettings {
+        display: block;
+    }
+    #settingsPage {
+        margin: 0 15vw;
+    }
 }
