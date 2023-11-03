@@ -1,0 +1,29 @@
+#mobileSettings {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 24px;
+}
+
+
+
+#settingsPage {
+    flex-direction: column;
+}
+.closeImg {
+    position: absolute;
+    height: 24px;
+}
+
+@media (max-width: 850px) {
+    .headerSettings {
+        display: none;
+    }
+    #mobileSettings {
+        display: block;
+    }
+    #settingsPage {
+        margin: 0 15vw;
+    }
+}

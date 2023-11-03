@@ -21,3 +21,34 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+
+.list1 {
+    color: #00FF01;
+}
+.list2 {
+    color: #33FF00;
+}
+.list3 {
+    color: #65FF00;
+}
+.list4 {
+    color: #93F500;
+}
+.list5 {
+    color: #CCFF00;
+}
+.list6 {
+    color: #FFFF01;
+}
+.list7 {
+    color: #FFCC00;
+}
+.list8 {
+    color: #FE9900;
+}
+.list9 {
+    color: #FF6600;
+}
+.list10 {
+    color: #FF3300;
+}

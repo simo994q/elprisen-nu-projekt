@@ -10,7 +10,12 @@ const assets = [
     './',
     './index.html',
     './css/globals.css',
-    './css/desktop.css'
+    './css/layout.css',
+    './css/nav.css',
+    './css/main.css',
+    './css/overview.css',
+    './css/history.css',
+    './css/settings.css',
 ]
 
 self.addEventListener('install', event => {

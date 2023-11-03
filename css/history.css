@@ -1,0 +1,30 @@
+#dateSelector {
+    background-color: var(--black);
+    box-shadow: 0px 0px 10px 0px #EBEBEB22;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+#dateSelector option {
+    padding: 8px 40px;
+    font-weight: 300;
+}
+
+#historyList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 300;
+    gap: 10px;
+}
+
+@media (max-width: 850px) {
+    .historyContainer {
+        margin: 0 15vw;
+    }
+}

@@ -1,0 +1,22 @@
+#overviewList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    font-weight: 300;
+}
+.overviewListItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    box-shadow: 0px 0px 10px 0px #EBEBEB19;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 40px;
+}
+
+@media (max-width: 850px) {
+    .overviewContainer {
+        margin: 0 15vw;
+    }
+}
