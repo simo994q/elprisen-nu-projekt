@@ -7,13 +7,32 @@
 }
 
 
-
-#settingsPage {
-    flex-direction: column;
+#settingsContainer {
+    display: none;
+    place-items: center;
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    left: 0;
+    background-color: #27282B99;
 }
-.closeImg {
+#settingsPage {
+    display: flex;
+    background-color: var(--black);
+    flex-direction: column;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    translate: -50% calc(-50% - 70px);
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+#closeImg {
     position: absolute;
     height: 24px;
+    top: 30px;
+    right: 30px;
 }
 
 @media (max-width: 850px) {
@@ -23,7 +42,31 @@
     #mobileSettings {
         display: block;
     }
-    #settingsPage {
+    #settingsContainer {
+        position: static;
         margin: 0 15vw;
+        background-color: var(--black);
+    }
+
+    #settingsContainer {
+        place-items: center;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        left: 0;
+        background-color: #27282B99;
+        margin: 0;
+    }
+    #settingsPage {
+        display: flex;
+        background-color: var(--grey);
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% calc(-50%);
+        width: 100vw;
+        height: calc(100vh - 70px);
+        border-radius: 0px;
     }
 }

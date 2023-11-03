@@ -5,7 +5,6 @@ window.addEventListener('resize', () => {
 const pageOne = document.getElementById('currentContainer')
 const pageTwo = document.getElementById('overviewContainer')
 const pageThree = document.getElementById('historyContainer')
-const settingsPage = document.getElementById('settingsPage')
 
 const setDisplay = (page) => {
     switch (page) {
@@ -24,23 +23,12 @@ const setDisplay = (page) => {
             pageTwo.style.display = 'none'
             pageThree.style.display = 'block'
             break;
-        case 4:
-            pageOne.style.display = 'none'
-            pageTwo.style.display = 'none'
-            pageThree.style.display = 'none'
-            settingsPage.style.dispay = 'flex'
-            break;
     }
 }
 const fullDisplay = () => {
     pageOne.style.display = 'flex'
     pageTwo.style.display = 'block'
     pageThree.style.display = 'block'
-    if (settingsPageOpen = true) {
-        settingsPage.style.dispay = 'flex'
-    } else {
-        settingsPage.style.dispay = 'none'
-    }
 }
 
 const navOne = document.getElementById('navOne')
@@ -57,8 +45,13 @@ navThree.addEventListener('click', () => {
     changeDisplay(3)
 })
 let pageSelector = 1
+let settingsPageActive = false
 
 const changeDisplay = (page) => {
+    if (settingsPageActive) {
+        settingsPageActive = false
+        closeSettings()
+    }
     switch (page) {
         case 1:
             pageSelector = 1
@@ -75,6 +68,7 @@ const changeDisplay = (page) => {
     }
 }
 
+
 const handleResize = () => {
     if (window.innerWidth < 850) {
         setDisplay(pageSelector)
@@ -84,3 +78,29 @@ const handleResize = () => {
 }
 
 handleResize()
+
+const settingsContainer = document.getElementById('settingsContainer')
+const headerSettings = document.getElementById('headerSettings')
+const mobileSettings = document.getElementById('mobileSettings')
+const closeImg = document.getElementById('closeImg')
+
+const openSettings = () => {
+    settingsContainer.style.display = 'flex'
+}
+const closeSettings = () => {
+    settingsContainer.style.display = 'none'
+}
+
+headerSettings.addEventListener('click', () => {
+    openSettings()
+    settingsPageActive = true
+})
+mobileSettings.addEventListener('click', () => {
+    openSettings()
+    settingsPageActive = true
+})
+closeImg.addEventListener('click', () => {
+    closeSettings()
+    changeDisplay(1)
+    settingsPageActive = false
+})
