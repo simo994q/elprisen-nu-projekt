@@ -111,9 +111,7 @@
 }
 
 .currentInfo {
-    background-color: var(--black);
     width: 100%;
-    text-align: center;
     font-weight: 300;
     padding: 20px 0;
 }
